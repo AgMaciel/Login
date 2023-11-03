@@ -3,12 +3,7 @@
     padding: 0;
     box-sizing: border-box
 }
-#logo_index{
-    width: 100%;
-    height: 60px;
-    padding: 15px 100px;
-    align-items: center;
-}
+
 #bloco_registro {
     background: transparent;
     border: none;
