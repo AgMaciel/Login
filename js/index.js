@@ -25,3 +25,24 @@ document.getElementById("btn_Registrar").addEventListener("click", function() {
   setInterval(nextSlide, 5000); // Troca os slides automaticamente a cada 5 segundos
   showSlide(currentIndex);
   
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const name = document.querySelectorAll('input[name=name]').value;
+    const cpf = document.querySelectorAll('input[name=cpf]').value;
+    const data_nascimento = document.querySelectorAll('input[name=data_nascimento]').value;
+    const email = document.querySelectorAll('input[name=email]').value;
+    const endereco = document.querySelectorAll('input[name=endereco]').value;
+    const telefone = document.querySelectorAll('input[name=telefone]').value;
+ 
+
+    fetch('https://api.sheetmonkey.io/form/oD9MZ2pWf7VQ4NAAmWgJQ', {
+        method: 'POST',
+        headers: {
+            'accept': 'application/json',
+            'content-type': 'application/json',
+    },
+    body: JSON.stringify({ name, cpf, data_nascimento, email, endereco, telefone}),
+    });
+}
+  Document.querySelector(".btn_Registrar").addEventListener("submit", handleSubmit());
