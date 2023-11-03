@@ -2,13 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Agis Maciel">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login2.css">
-    <link rel="stylesheet" href="./css/registrar.css">
-    <title>Login</title>
+    <title>Esqueceu a Senha</title>
 </head>
 <body>
     <div id="topo">
@@ -23,23 +21,28 @@
                 <a href="">Pesquisar</a>
                 <a href="">icone Lupa</a>
                 <a href="">icone Carrinho</a>
-                <a href="login2.html">Entrar</a>
-                <a href="registrar.html">Registrar</a> 
+                <a href="./login2.html">Entrar</a>
+                <a href="./registrar.html">Registrar</a> 
             </nav>
         </header>
     </div>
 
-    <main id="carousel" class="carousel">
-        <div class="slide">
-          <img src="./img/cafe640por427.jpg" alt="Imagem 1">
+    <main>
+        <div id="bloco_login">
+          <h4>Lembrar Senha</h4>
+          <h1>Insira seu e-mail de login</h1>
+          <label for="email" name="return_email">E-MAIL</label>
+          <input type="text" id="email">
+      <br>
+          
+          <button id="btn_entrar" type="submit">Enviar</button>
+      
+          <p>Enviaremos um E-mail com instruções de resgate da senha.</p>
+      
         </div>
-        <!-- <div class="slide">
-          <img src="./img/cafe1280por854.jpg" alt="Imagem 2">
-        </div>
-        <div class="slide">
-          <img src="imagem3.jpg" alt="Imagem 3">
-        </div> -->
       </main>
+      
+
       <footer>
         <div id="footer-menu">
         <img src="./img/instagram_blk.png" alt="Instagram">
@@ -50,5 +53,8 @@
           <p>&copy; 2023 - <strong>Pequi Coffee</strong> <br>Endereço: Rua José Franco Pimentel 337 - Centro - Luziânia - CEP: 72.800-500</p>
         
       </footer>
+
+
 </body>
+
 </html>

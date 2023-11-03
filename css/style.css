@@ -8,7 +8,7 @@
 
 header{
     width: 100%;
-    height: 60px;
+    height: 150px;
 }
 #topo{
     width: 100%;
@@ -22,7 +22,6 @@ header{
     text-decoration: none;
     font-family: 'Helvetica',Arial,sans-serif;
     position: fixed;
-    z-index: 103;
     font-size: 19px;
     align-items: center;
 }
@@ -35,30 +34,102 @@ a{
    
 }
 img{
-    padding: 0px 300px;
+    padding: 0px 100px;
 }
 main{
+    background: transparent;
     width: 100%;
     height: 900px;
     padding: 150px 40px;
-    background-color: rgb(53, 17, 211);
+    margin: 0 auto;
+    background-image: url(./img/cafe1280por854.jpg);
+    /* background-color: rgb(53, 17, 211); */
 }
+/* .slide{
+    width: 100%;
+    height: 300px;
+    /* background-image: url(./img/cafe640por427.jpg); */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 15px 40px 15px;
+ }  */
+/* início do código carrousel */
+/* 
+ .carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 1s;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 10%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Sobreposição semitransparente */
+   /* }
+  .transparent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  } */
+    */
+  /* fim do coido carroussel */
 
 #bloco_login{
     width: 30%;
     height: 600px;
     margin: 0 auto;
-    background-color: brown;
+    background-color: #fff;
     align-items: center;
 }
 h4{
-    align-items: center;
+    /* padding: 0px 170px; */
+    align-items: left;
+    justify-content: center;
+}
+#btn_Entrar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(57, 182, 149);
+    border-radius: 10px;
+    border: none;
+    color: #32ce16;
+    font-family: 'Helvetica',Arial,sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 1px;
 }
 footer{
     width: 100%;
     height: 60px;
     padding: 15px 40px;
     background-color: rgb(87, 139, 126);
+    font-size: 18px;
    
 }
 

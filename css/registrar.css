@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+#bloco_registro {
+    background: transparent;
+    border: none;
+    padding: 20px; /* Ajuste o espaçamento interno conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #bloco_registro form {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #bloco_registro label {
+    display: block; /* Coloca as etiquetas em uma linha separada */
+    margin: 10px 0; /* Espaçamento entre as etiquetas */
+    width: 100%; /* Largura total */
+    text-align: left; /* Alinhamento do texto à esquerda */
+  }
+  
+  #bloco_registro input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    text-align: center;
+    padding: 5px;
+    width: 100%; /* Largura total */
+  }
+  
+  #bloco_registro button {
+    border: none;
+    background: #00FF00; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 200px; /* Tamanho do botão */
+    border-radius: 20px; /* Borda arredondada do botão */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+  }
+  
+  #bloco_registro button:hover {
+    background: #009900; /* Cor de destaque ao passar o mouse */
+  }
+  #footer-menu img:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+    transition: transform 0.3s; /* Adiciona uma transição suave para o efeito */
+  }
