@@ -3,7 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+#root{
+  --preto: #302727;
+  --vermelho: #ba2d2d;
+  --laranjaLight: #f2511b;
+  --laranja-color: #f2861b;
+  --amarelo: #c7c730;
+  --branco: #ffffff;
+  --verdeClaro:#00FF00;
+  --verdeEscuro:#1c5e3a!important;
+
+  
 }
 header{
     width: 100%;
