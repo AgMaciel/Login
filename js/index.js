@@ -37,7 +37,7 @@ document.getElementById("btn_Registrar").addEventListener("click", function() {
  
 
     fetch('https://api.sheetmonkey.io/form/oD9MZ2pWf7VQ4NAAmWgJQ', {
-        method: 'POST',
+        method: 'get',
         headers: {
             'accept': 'application/json',
             'content-type': 'application/json',
@@ -46,3 +46,30 @@ document.getElementById("btn_Registrar").addEventListener("click", function() {
     });
 }
   Document.querySelector(".btn_Registrar").addEventListener("submit", handleSubmit());
+
+  function buscarDados() {
+    var nomeAluno = document.getElementById('nome').value;
+    var serieAluno = document.getElementById('serie').value;
+
+    // Substitua 'SUA_CHAVE_DE_API' pela chave de API do Google Sheets
+    var apiKey = 'SUA_CHAVE_DE_API';
+    var url = 'https://docs.google.com/spreadsheets/d/1Op3JTcwIWxBrloyJX5VGfM0agErftkUgcmf_IVXC67w/edit#gid=0';
+    url += 'key=' + apiKey;
+
+    // Adicione os parâmetros da consulta
+    url += '&valueInputOption=RAW';
+    url += '&dateTimeRenderOption=FORMATTED_STRING';
+    url += '&majorDimension=ROWS';
+    url += '&dimension=ROWS';
+
+    // Realize a solicitação à API usando Fetch ou XMLHttpRequest
+    fetch(url)
+      .then(response => response.json())
+      .then(data => exibirResultado(data))
+      .catch(error => console.error('Erro:', error));
+  }
+
+  function exibirResultado(data) {
+    var resultadoDiv = document.getElementById('resultado');
+    resultadoDiv.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+  }

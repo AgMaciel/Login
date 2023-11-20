@@ -54,5 +54,5 @@
   }
   #footer-menu img:hover {
     transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
-    transition: transform 0.3s; /* Adiciona uma transição suave para o efeito */
+    transition: transform 0.2s; /* Adiciona uma transição suave para o efeito */
   }

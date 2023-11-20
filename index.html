@@ -12,67 +12,73 @@
     <title>Login</title>
 </head>
 <body>
+<header id="root" class="w-100 p-0 m-0">
+  <nav>
+    <nav class="navbar container-fluid navbar-expand-lg bg-secondary p-0 m-0 color:var(--verdeEscuro)">
+        <div class="container-fluid justify-content-start p-2 m-0">
+            <a class="navbar-brand p-0 m-0" href="index.html"><img src="./img/padariaicone_menor.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: var(--branco);">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: var(--branco);">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobreNos.html" style="color: var(--branco);">Sobre Nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="registrar.html" style="color: var(--branco);">Registrar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login2.html" style="color: var(--branco);">Entrar</a>
+                  </li>               
+                </ul>
+              </div>
+        </div>
+              <div id="btn-menu">
+                <form class="container-fluid">
+                  <button class="btn btn-outline-light justify-content-end" type="button" >Menu</button>
+                </form>
+              </div>
+      
+    </nav>
+</nav>  
+</header>
 
-    <nav id="root">
-        <nav class="navbar navbar-expand-lg bg-secondary p-0 m-0 color:var(--verdeEscuro)">
-            <div class="container-fluid justify-content-start p-2 m-0">
-                <a class="navbar-brand p-0 m-0" href="index.html"><img src="./img/padariaicone_menor.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" style="color: var(--branco);">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nossosprodutos.html" style="color: var(--branco);">Nossos Produtos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="sobreNos.html" style="color: var(--branco);">Sobre Nós</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="registrar.html" style="color: var(--branco);">Registrar</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="login2.html" style="color: var(--branco);">Entrar</a>
-                      </li>               
-                    </ul>
-                  </div>
-            </div>
-                  <div id="btn-menu">
-                    <form class="container-fluid">
-                      <button class="btn btn-outline-light justify-content-end" type="button" >Menu</button>
-                    </form>
-                  </div>
-          
-        </nav>
-  </nav>  
-
-
-<main class="bg-danger w-100">
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div id="carouselExampleIndicators" class="container-fluid carousel slide w-100 p-0 m-0">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/cafe1280por854.jpg" class="d-block " alt="...">
+        <img src="./img/cafe1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./img/cafe640por427.jpg" class="d-block " alt="...">
+        <img src="./img/cafe4.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./img/cafe.png" class="d-block " alt="...">
+        <img src="./img/cafe3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" style="color: none">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 </main>
+   
+
 
 <footer>
   <div id="footer-menu">
