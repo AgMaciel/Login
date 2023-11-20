@@ -53,7 +53,7 @@ document.getElementById("btn_Registrar").addEventListener("click", function() {
 
     // Substitua 'SUA_CHAVE_DE_API' pela chave de API do Google Sheets
     var apiKey = 'SUA_CHAVE_DE_API';
-    var url = 'https://docs.google.com/spreadsheets/d/1Op3JTcwIWxBrloyJX5VGfM0agErftkUgcmf_IVXC67w/edit#gid=0';
+    var url = 'https://sheets.googleapis.com/v4/spreadsheets/SUA_ID_DA_PLANILHA/values/Sheet1?';
     url += 'key=' + apiKey;
 
     // Adicione os parâmetros da consulta
